@@ -38,7 +38,7 @@ function showPercentage(e) {
     } else {
       output++;
     }
-  }, 100);
+  }, 30);
 }
 btnSend.addEventListener('click', showPercentage);
 let i = 0;
