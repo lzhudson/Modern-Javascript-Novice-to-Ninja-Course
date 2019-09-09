@@ -1,6 +1,6 @@
 const form = document.querySelector('.add');
 const inputAddTodo = form.add;
-
+const iconDelete = document.querySelectorAll('.far.fa-trash-alt.delete');
 function addTodo(e) {
   e.preventDefault();
   const ul = document.querySelector('.todos');
@@ -13,6 +13,13 @@ function addTodo(e) {
   li.appendChild(span);
   li.appendChild(icon);
   ul.appendChild(li);
+  inputAddTodo.value = '';
+}
+function removeTodo(e){
+  e.target.parentElement.remove();
 }
 
 form.addEventListener('submit', addTodo);
+iconDelete.forEach((element)=>{
+  element.addEventListener('click', removeTodo);
+})
