@@ -17,3 +17,9 @@ input[type=text]:focus{
 .delete{
   cursor: pointer;
 }
+.input-error {
+  border-color: #dc3545;
+}
+.filtered {
+  display: none !important;
+}
