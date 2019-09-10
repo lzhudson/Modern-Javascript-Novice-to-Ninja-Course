@@ -18,7 +18,7 @@ input[type=text]:focus{
   cursor: pointer;
 }
 .input-error {
-  border-color: #dc3545;
+  border: 1px solid #dc3545 !important;
 }
 .filtered {
   display: none !important;
