@@ -20,9 +20,8 @@ function createElementTodo(textTodo){
 }
 function addTodo(e) { 
   e.preventDefault();
-  var regex = /^\w+$/gmi;
+  var regex = /\w+/gmi;
   if(regex.test(inputAddTodo.value)){
-    messsageError.style.display = '';
     createElementTodo(inputAddTodo.value);
     formAdd.reset();
   } else {
